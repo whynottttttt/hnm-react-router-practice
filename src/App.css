@@ -1,0 +1,44 @@
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-section {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-list li {
+  padding: 10px
+}
+
+.menu-area {
+  position: absolute;
+  display: flex;
+  top: 90px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-section {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
