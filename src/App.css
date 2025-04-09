@@ -5,15 +5,23 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
+
 
 .nav-section {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+}
+
+
+.nav-section img {
+  max-width: 100px;
+  height: auto;
 }
 
 .menu-list {
@@ -41,4 +49,42 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+
+.container {
+  position: absolute;
+  margin-top: -200px;
+  padding: 20px;
+  max-width: 1200px;
+  right: 20px;
+}
+
+.row {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.col-lg-3 img {
+  max-width: 100%;
+  width: 230px;
+  height: auto;
+}
+
+
+.col-lg-3 {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .row {
+    justify-content: center;
+    padding-right: 0;
+  }
 }

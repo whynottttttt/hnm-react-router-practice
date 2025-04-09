@@ -1,15 +1,39 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom"
+import styled from 'styled-components'
 
-const ProductCard = () => {
+const ProductCard = ({ item }) => {
+    const navigate = useNavigate()
+    const showDetail = () => {
+        navigate(`/product/${item.id}`)
+
+    }
     return (
-        <div>
-            <img src="https://image.hm.com/assets/hm/02/1d/021d8e351a09652af3b4f6df90fbbd4ae144ddc3.jpg?imwidth=396" />
-            <div>Conscious choice</div>
-            <div>벨티드 트윈 코드</div>
-            <div>$99900</div>
-            <div>신제품</div>
+        <div className="card" onClick={showDetail}>
+            <CardContainer>
+                <img src={item?.img} />
+                <div>{item?.choice == true ? "choice" : ""}</div>
+                <div>{item?.title}</div>
+                <div>{item?.price}</div>
+                <div>{item?.new == true ? "신제품" : ""}</div>
+            </CardContainer >
         </div>
+
     )
 }
+
+const CardContainer = styled.div`
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+`
 
 export default ProductCard
