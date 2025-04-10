@@ -88,3 +88,8 @@
     padding-right: 0;
   }
 }
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
+}
