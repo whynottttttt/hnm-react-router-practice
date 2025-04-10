@@ -102,3 +102,9 @@
   display: flex;
   justify-content: center;
 }
+
+.product-detail-card {
+  display: flex;
+  justify-content: center;
+
+}
