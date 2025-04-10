@@ -5,9 +5,8 @@ import styled from 'styled-components'
 const ProductCard = ({ item }) => {
     const navigate = useNavigate()
     const showDetail = () => {
-        navigate(`/product/${item.id}`)
-
-    }
+        navigate(`/product/${item.id}`);
+    };
     return (
         <div className="card" onClick={showDetail}>
             <CardContainer>

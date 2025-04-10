@@ -1,6 +1,6 @@
 .login-button {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 20px;
   display: flex;
   align-items: center;
@@ -56,14 +56,14 @@
   position: absolute;
   margin-top: -200px;
   padding: 20px;
-  max-width: 1200px;
-  right: 20px;
+  max-width: 12px;
+  right: 300px;
 }
 
 .row {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 
