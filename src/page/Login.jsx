@@ -12,7 +12,7 @@ const Login = ({ setAuthenticate }) => {
     }
     return (
         <Container className="login-area">
-            <div>
+            <div className="login-container">
                 <Form className="login-form" onSubmit={(event) => loginUser(event)}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
