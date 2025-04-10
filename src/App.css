@@ -51,58 +51,51 @@
   gap: 6px;
 }
 
-/* 상품 관련 스타일 */
-.product-page {
-  padding-top: 120px;
-}
-
-.product-container {
-  width: 100%;
-  max-width: 1200px;
+.container {
+  position: absolute;
+  margin-top: -200px;
   padding: 20px;
+  max-width: 12px;
+  right: 100px;
 }
 
-.product-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.product-col {
-  margin-bottom: 30px;
-  padding: 0 15px;
-}
-
-.product-card-wrapper {
-  width: 100%;
-}
-
-/* 로그인 폼 스타일 */
-.login-area {
-  margin-top: 120px;
+.row {
+  position: absolute;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-.login-container {
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
+.col-lg-3 img {
+  max-width: 100%;
+  width: 230px;
+  height: auto;
+}
+
+.col-lg-3 {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login-form {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #eee;
-  border-radius: 5px;
-  background-color: #fff;
+  width: 40em;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
 }
 
 .product-detail-card {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
 }
 
 /* 모바일 메뉴 버튼 (기본적으로 숨김) */
@@ -164,64 +157,25 @@
     width: 100%;
   }
 
-  /* 모바일에서 상품 레이아웃 수정 */
-  .product-page {
-    padding-top: 100px;
-  }
-
+  /* Product grid for mobile */
   .product-container {
-    padding: 10px;
-  }
-
-  .product-row {
-    display: block;
-    width: 100%;
-  }
-
-  .product-col {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 0 15px;
-  }
-
-  /* 모바일 로그인 폼 수정 */
-  .login-area {
-    margin-top: 100px;
-    padding: 0 15px;
-  }
-
-  .login-container {
-    width: 100%;
-    padding: 0;
-  }
-
-  .login-form {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .product-detail-card {
+    position: relative;
     margin-top: 120px;
-    padding: 0 15px;
-    width: 100%;
-  }
-
-  /* Bootstrap columns 재정의 */
-  .col-xs-12 {
-    width: 100%;
-    flex: 0 0 100%;
     max-width: 100%;
+    padding: 0 15px;
+    right: auto;
   }
-}
 
-/* 태블릿 화면 */
-@media (min-width: 769px) and (max-width: 992px) {
   .product-row {
-    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .product-col {
-    width: 50%;
+    width: 100%;
+    padding: 0 0 30px 0;
   }
 }

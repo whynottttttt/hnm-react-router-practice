@@ -66,6 +66,12 @@ const CardContainer = styled.div`
     @media (max-width: 768px) {
         margin-bottom: 20px;
         
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
         .product-info {
             padding: 10px 0;
         }

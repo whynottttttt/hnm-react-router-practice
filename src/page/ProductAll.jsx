@@ -20,14 +20,12 @@ const ProductAll = () => {
     }, [query]);
 
     return (
-        <div className="product-page">
+        <div>
             <Container className="product-container">
                 <Row className="product-row">
                     {productList.map((menu, index) => (
-                        <Col xs={12} sm={12} md={6} lg={3} key={index} className="product-col">
-                            <div className="product-card-wrapper">
-                                <ProductCard item={menu} />
-                            </div>
+                        <Col lg={3} md={6} sm={12} xs={12} key={index} className="product-col">
+                            <ProductCard item={menu} />
                         </Col>
                     ))}
                 </Row>
